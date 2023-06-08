@@ -4,7 +4,7 @@ import {firebase} from '../config';
 
 const Dashboard = () => {
 
-    const [firstName, setFirstName] = useState('');
+    const [name, setName] = useState('');
 
     useEffect(() => {
         firebase.firestore().collection('users')
@@ -24,7 +24,9 @@ const Dashboard = () => {
         return (
             <SafeAreaView style = {styles.container}>
                     <Text style = {{fontSize: 30, fontWeight: "bold"}}>
-                        Hello, {firstName}
+                        Hello, {name.firstName}
+
+                        
                     </Text>
                 <TouchableOpacity
 
