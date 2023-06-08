@@ -23,7 +23,7 @@ const Login = () =>{
     return (
 
         <View style = {styles.container}>
-            <Text style = {styles.text}>
+            <Text style = {{fontSize: 30,fontWeight: "bold",}}>
                 Login Screen
             </Text>
 
@@ -107,9 +107,6 @@ styles = StyleSheet.create({
         elevation: 20,
         justifyContent: "center"
     },
-    text:{
-        fontSize: 30,
-        fontWeight: "bold",
-    },
+   
     
 })
