@@ -95,7 +95,7 @@ styles = StyleSheet.create({
         borderBottomColor: "#000",
         marginBottom: 10,
         textAlign: "center"
-    },
+       },
     button:{
 
         marginTop: 40,
