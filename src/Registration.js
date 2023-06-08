@@ -51,39 +51,37 @@ const Registration = () => {
             </Text>
 
             <View style = {{marginTop:40}}>
-                <TextInput>
-                    style = {styles.TextInput}
+                <TextInput
+                    style = {styles.TextIn}
                     placeholder = "First Name"
                     onChangeText = {(firstName) => setFirstName(firstName)}
                     autoCapitalize = "none"
-                    autoCorrect = {false}
-                </TextInput>
+                    autoCorrect = {false}/>
 
-                <TextInput>
-                    style = {styles.TextInput}
+                <TextInput
+                    style = {styles.TextIn}
                     placeholder = "Last Name"
                     onChangeText = {(lastName) => setFirstName(lastName)}
                     autoCapitalize = "none"
                     autoCorrect = {false}
-                </TextInput>
+                    />
 
-                <TextInput>
-                    style = {styles.TextInput}
+                <TextInput
+                    style = {styles.TextIn}
                     placeholder = "Email"
                     onChangeText = {(email) => setFirstName(email)}
                     autoCapitalize = "none"
                     autoCorrect = {false}
-                    keyboardType = "email-address"
-                </TextInput>
+                    keyboardType = "email-address"/>
 
-                <TextInput>
-                    style = {styles.TextInput}
+                <TextInput
+                    style = {styles.TextIn}
                     placeholder = "Password"
                     onChangeText = {(password) => setFirstName(password)}
                     autoCapitalize = "none"
                     autoCorrect = {false}
-                    secureTextEntry = {true}
-                </TextInput>
+                    secureTextEntry = {true}/>
+                
 
 
             </View>
@@ -114,16 +112,27 @@ styles = StyleSheet.create({
         alignItems: "center",
         marginTop: 100
     },
-    TextInput:{
+    TextIn: {
         paddingTop: 20,
         paddingBottom: 10,
-        width:400,
+        width: 400,
         fontSize: 18,
         borderBottomWidth: 1,
+        textAlign: "center",
         borderBottomColor: "#000",
         marginBottom: 10,
-        textAlign: "center"
+
     },
+    // TextInput:{
+    //     paddingTop: 20,
+    //     paddingBottom: 10,
+    //     width:400,
+    //     fontSize: 18,
+    //     borderBottomWidth: 1,
+    //     borderBottomColor: "#000",
+    //     marginBottom: 10,
+    //     textAlign: "center"
+    // },
     button:{
 
         marginTop: 40,
