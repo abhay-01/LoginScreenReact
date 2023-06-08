@@ -15,13 +15,13 @@ const Registration = () => {
         .then(() => {
             firebase.auth().currentUser.sendEmailVerification({
                 handleCodeInApp: true,
-                url: 'https://loginscreen-b5b95.firebaseapp.com'
+                url: 'https://loginscreen-b5b95.firebaseapp.com',
             })
 
             .then(() => {
-                alert('Verification email sent');
+                alert('Verification email sent')
             }).catch((error) => {
-                alert(error.message);
+                alert(error.message)
             })
             .then(() => {
                 firebase.firestore.collection('users')
@@ -34,12 +34,12 @@ const Registration = () => {
         })
 
         .catch((error) => {
-            alert(error.message);
+            alert(error.message)
         })
 
     })
     .catch((error => {
-        alert(error.message);
+        alert(error.message)
     }))
 }
 
@@ -61,7 +61,7 @@ const Registration = () => {
                 <TextInput
                     style = {styles.TextIn}
                     placeholder = "Last Name"
-                    onChangeText = {(lastName) => setFirstName(lastName)}
+                    onChangeText = {(lastName) => setLastName(lastName)}
                     autoCapitalize = "none"
                     autoCorrect = {false}
                     />
@@ -69,7 +69,7 @@ const Registration = () => {
                 <TextInput
                     style = {styles.TextIn}
                     placeholder = "Email"
-                    onChangeText = {(email) => setFirstName(email)}
+                    onChangeText = {(email) => setEmail(email)}
                     autoCapitalize = "none"
                     autoCorrect = {false}
                     keyboardType = "email-address"/>
@@ -77,7 +77,7 @@ const Registration = () => {
                 <TextInput
                     style = {styles.TextIn}
                     placeholder = "Password"
-                    onChangeText = {(password) => setFirstName(password)}
+                    onChangeText = {(password) => setPassword(password)}
                     autoCapitalize = "none"
                     autoCorrect = {false}
                     secureTextEntry = {true}/>
@@ -120,19 +120,10 @@ styles = StyleSheet.create({
         borderBottomWidth: 1,
         textAlign: "center",
         borderBottomColor: "#000",
-        marginBottom: 10,
+        marginBottom: 10
 
     },
-    // TextInput:{
-    //     paddingTop: 20,
-    //     paddingBottom: 10,
-    //     width:400,
-    //     fontSize: 18,
-    //     borderBottomWidth: 1,
-    //     borderBottomColor: "#000",
-    //     marginBottom: 10,
-    //     textAlign: "center"
-    // },
+   
     button:{
 
         marginTop: 40,

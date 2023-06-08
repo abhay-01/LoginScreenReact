@@ -97,7 +97,6 @@ styles = StyleSheet.create({
         textAlign: "center"
        },
     button:{
-
         marginTop: 40,
         height: 50,
         width: 200,
@@ -106,7 +105,6 @@ styles = StyleSheet.create({
         alignItems: "center",
         elevation: 20,
         justifyContent: "center"
-    },
-   
+    }
     
 })
